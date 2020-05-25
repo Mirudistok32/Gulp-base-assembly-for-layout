@@ -22,6 +22,8 @@ gulp.task("sass", () => {
 gulp.task("style", () => {
   return gulp
     .src([
+      "node_modules/normalize.css/normalize.css",
+      "node_modules/animate.css/animate.min.css",
       "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
       "node_modules/slick-carousel/slick/slick.css",
       "node_modules/slick-carousel/slick/slick-theme.css",
@@ -43,6 +45,7 @@ gulp.task("script", () => {
   return gulp
     .src([
       "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/wowjs/dist/wow.min.js",
       "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
       "node_modules/slick-carousel/slick/slick.min.js",
     ])

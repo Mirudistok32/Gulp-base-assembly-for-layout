@@ -33,9 +33,18 @@ ul {
 }
 
 .container {
-  width: 1020px;
+  max-width: 1020px;
   padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+.container-mini {
+  max-width: 770px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
 }
 
-// @import "header.scss";
-// @import "footer.scss";
+@import "header.scss";
+@import "footer.scss";
